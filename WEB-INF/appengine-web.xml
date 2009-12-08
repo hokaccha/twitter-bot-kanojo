@@ -1,0 +1,14 @@
+<appengine-web-app xmlns='http://appengine.google.com/ns/1.0'>
+  <application>twitter-bot-kanojo</application>
+  <version>1</version>
+  <public-root>/public</public-root>
+  <static-files/>
+  <resource-files/>
+  <system-properties>
+    <property name='os.arch' value=''/>
+    <property name='jruby.jit.threshold' value='99'/>
+    <property name='jruby.native.enabled' value='false'/>
+    <property name='jruby.management.enabled' value='false'/>
+    <property name='jruby.rack.input.rewindable' value='false'/>
+  </system-properties>
+</appengine-web-app>

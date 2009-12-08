@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/post/return</url>
+    <description>auto post</description>
+    <schedule>every 3 minutes</schedule>
+  </cron>
+  <cron>
+    <url>/post/auto</url>
+    <description>auto post</description>
+    <schedule>every 3 hours</schedule>
+  </cron>
+</cronentries>
