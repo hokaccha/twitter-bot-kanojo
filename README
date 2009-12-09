@@ -1,0 +1,6 @@
+Preas write config.yaml. For example
+
+kareshi: your_twitter_screen_name
+user:
+  username: bot_username
+  password: bot_password
