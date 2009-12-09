@@ -16,4 +16,12 @@ Dir.chdir(&apos;..&apos;) if Dir.pwd =~ /WEB-INF$/; begin; require &apos;bundler
   <listener>
     <listener-class>com.google.appengine.jruby.LazyContextListener</listener-class>
   </listener>
+  <security-constraint>
+    <web-resource-collection>
+      <url-pattern>/cron/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
 </web-app>
