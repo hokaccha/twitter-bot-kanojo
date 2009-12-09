@@ -3,8 +3,8 @@ require 'json'
 
 class Twitter
   def initialize(username, password)
-    @username = username
-    @password = password
+    @req = Net::HTTP::Get.new('/')
+    @req.basic_auth username, password
   end
 
   def update(body)
@@ -21,10 +21,8 @@ class Twitter
   private
 
   def request(url, method = 'GET', options = {})
-    req = Net::HTTP::Get.new('/')
-    req.basic_auth @username, @password
     options[:method]  = method
-    options[:headers] = { 'Authorization' => req['Authorization'] }
+    options[:headers] = { 'Authorization' => @req['Authorization'] }
     AppEngine::URLFetch.fetch(url, options)
   end
 end
