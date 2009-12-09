@@ -2,7 +2,7 @@
 <cronentries>
   <cron>
     <url>/post/return</url>
-    <description>auto post</description>
+    <description>return post</description>
     <schedule>every 3 minutes</schedule>
   </cron>
   <cron>
